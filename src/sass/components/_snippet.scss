@@ -1,0 +1,49 @@
+@use "../utilities" as *;
+
+.snippet {
+
+    h2,h3 {
+        margin-top: 0.5em;
+    }
+    li {
+        margin-top: 3em;
+
+        &:first-child {
+            margin: 0;
+        }
+    }
+
+    img {
+        grid-area: image;   
+    }
+
+    .content {
+        grid-area: cont;
+    }
+
+    span {
+        color: $color-dark;
+        font-weight: 500;
+    }
+
+    p {
+        margin: 0.7em 0;
+
+        &:nth-child(3) {
+            color: $color-dark;
+            margin-bottom: 2em;
+        }
+    }
+
+@include screen(tablet) {
+
+    article {
+        display: grid;
+        grid-template-areas:
+        "cont image";
+        grid-column-gap: 4em;
+        grid-template-columns: 1fr 40%;
+        grid-template-rows: min-content min-content min-content 1fr;
+    }
+}
+};

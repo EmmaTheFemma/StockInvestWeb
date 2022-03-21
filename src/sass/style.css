@@ -1,4 +1,14 @@
-* {
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
   margin: 0;
 }
 
@@ -18,8 +28,37 @@ ul {
   padding: 0;
 }
 
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1rem;
+  color: #5c5c5c;
+  max-width: 60ch;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
 }
 
 .title a {
@@ -32,6 +71,95 @@ body {
 .copyright {
   display: flex;
   justify-content: center;
+  color: white;
+}
+
+.btn {
+  background-color: green;
+  width: 100%;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.7em;
+  border-radius: 8px;
+}
+.btn:hover {
+  background-color: #05b105;
+  color: white;
+}
+@media (min-width: 1100px) {
+  .btn {
+    width: unset;
+  }
+}
+
+.hero, .hero-img, .hero-special {
+  color: white;
+  margin-bottom: 5em;
+}
+.hero .container, .hero-img .container, .hero-special .container {
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 1000px;
+  padding: 5em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-special {
+  background-color: green;
+}
+
+.hero-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-img img {
+  max-height: 25em;
+}
+.hero-img .content {
+  position: absolute;
+}
+
+.snippet h2, .snippet h3 {
+  margin-top: 0.5em;
+}
+.snippet li {
+  margin-top: 3em;
+}
+.snippet li:first-child {
+  margin: 0;
+}
+.snippet img {
+  grid-area: image;
+}
+.snippet .content {
+  grid-area: cont;
+}
+.snippet span {
+  color: #383838;
+  font-weight: 500;
+}
+.snippet p {
+  margin: 0.7em 0;
+}
+.snippet p:nth-child(3) {
+  color: #383838;
+  margin-bottom: 2em;
+}
+@media (min-width: 900px) {
+  .snippet article {
+    display: grid;
+    grid-template-areas: "cont image";
+    grid-column-gap: 4em;
+    grid-template-columns: 1fr 40%;
+    grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content 1fr;
+    grid-template-rows: min-content min-content min-content 1fr;
+  }
 }
 
 footer {
@@ -45,6 +173,9 @@ footer .container {
   max-width: 1000px;
 }
 
+header {
+  margin-top: 1em;
+}
 header nav {
   display: flex;
 }
@@ -61,4 +192,14 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+main {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+main .container {
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 1000px;
 }/*# sourceMappingURL=style.css.map */

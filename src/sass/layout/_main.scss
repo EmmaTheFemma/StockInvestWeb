@@ -1,0 +1,10 @@
+@use "../utilities" as *;
+
+main {
+    .container {
+        @include container(medium);
+    }
+
+    margin-top: 3em;
+    margin-bottom: 3em;
+}

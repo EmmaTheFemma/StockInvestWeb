@@ -1,0 +1,40 @@
+@use "../utilities" as *;
+
+// NOT DONE
+// Needs to look better with the text iver image.
+// https://www.reddit.com/r/webdev/comments/lq7k11/how_spotify_makes_text_on_images_readable/
+
+.hero {
+    color: $color-light;
+    margin-bottom: 5em;
+
+    .container {
+        @include container(medium);
+        padding: 5em $padding-sides;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.hero-special {
+    @extend .hero;
+    background-color: $color-special;
+}
+
+.hero-img {
+    @extend .hero;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        max-height: 25em;
+    }
+
+    .content {
+        position: absolute;
+    }
+}
