@@ -1,0 +1,24 @@
+@use "../utilities" as *;
+
+* {
+    margin: 0;
+}
+
+a {
+    //Removes Underline.
+    text-decoration: none;
+
+    color: $color-special;
+
+    &:hover {
+        color: $color-special-100; 
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+}

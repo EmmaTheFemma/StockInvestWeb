@@ -14,7 +14,7 @@ layout: 'base.njk'
 <li>
     <article>
         <h2>{{ post.data.title }}</h2>
-        <p>{{ post.date }}</p>
+        <p>{{ post.date | postDate }}</p>
         <a href="{{ post.url }}">Read More...</a>
     </article>
 </li>

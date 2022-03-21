@@ -1,0 +1,20 @@
+@use "../utilities" as *;
+
+body {
+    font-family: $font-family;
+}
+
+.title {
+    a {
+        color: inherit;
+    }
+
+    span {
+        color: $color-special;
+    }
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+}

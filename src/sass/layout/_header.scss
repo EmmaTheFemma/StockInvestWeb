@@ -1,0 +1,23 @@
+@use "../utilities" as *;
+
+header {
+    nav {
+        display: flex;
+    }
+
+    li {
+        margin-right: 1em;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .container {
+        @include container(medium);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
