@@ -1,0 +1,22 @@
+---
+title: Blog
+layout: 'base.njk'
+---
+
+<h1>Welcome to the Blog</h1>
+
+<p>
+    jhasdhasdaid+ad+ap
+</p>
+
+<ul role="list" class="snippet">
+{%- for post in collections.post | reverse -%}
+<li>
+    <article>
+        <h2>{{ post.data.title }}</h2>
+        <p>{{ post.date }}</p>
+        <a href="{{ post.url }}">Read More...</a>
+    </article>
+</li>
+{%- endfor -%}
+</ul>
