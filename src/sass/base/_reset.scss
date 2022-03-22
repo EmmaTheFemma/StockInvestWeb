@@ -37,3 +37,8 @@ img {
     width: 100%;
     object-fit: cover;
 }
+
+::selection, ::-moz-selection {
+    background: $color-special-100;
+    color: $color-light;
+}

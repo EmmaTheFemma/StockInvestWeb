@@ -34,6 +34,16 @@ img {
      object-fit: cover;
 }
 
+::-moz-selection {
+  background: #05b105;
+  color: white;
+}
+
+::selection, ::-moz-selection {
+  background: #05b105;
+  color: white;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
@@ -78,9 +88,9 @@ h4 {
   background-color: green;
   width: 100%;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 500;
-  padding: 0.7em;
+  padding: 0.7em 1.5em;
   border-radius: 8px;
 }
 .btn:hover {
@@ -89,7 +99,8 @@ h4 {
 }
 @media (min-width: 1100px) {
   .btn {
-    width: unset;
+    padding: 0.7em;
+    font-size: 1.2rem;
   }
 }
 
@@ -101,11 +112,16 @@ h4 {
   margin: 0 auto;
   padding: 0 1em;
   max-width: 1000px;
-  padding: 5em 1em;
+  padding: 3em 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 900px) {
+  .hero .container, .hero-img .container, .hero-special .container {
+    padding: 5em 1em;
+  }
 }
 
 .hero-special {
@@ -117,6 +133,8 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%);
+  z-index: 1;
 }
 .hero-img img {
   max-height: 25em;
@@ -162,6 +180,36 @@ h4 {
   }
 }
 
+.snippet-featured p:nth-child(2) {
+  margin: 0.5em 0;
+}
+.snippet-featured p:nth-child(2) span {
+  color: #383838;
+}
+.snippet-featured p:nth-child(3) {
+  margin-bottom: 2em;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.snippet-featured article {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin-top: 2em;
+}
+.snippet-featured .content {
+  padding: 1em 2em 3em 2em;
+}
+@media (min-width: 600px) {
+  .snippet-featured .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 2em;
+  }
+}
+
 footer {
   background-color: green;
   color: white;
@@ -202,4 +250,34 @@ main .container {
   margin: 0 auto;
   padding: 0 1em;
   max-width: 1000px;
+}
+
+article img {
+  max-height: 25em;
+}
+article p :first-child {
+  margin-bottom: 5em;
+}
+
+.posts h1 {
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+}
+.posts .container {
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 800px;
+}
+.posts img:first-child {
+  max-height: 20em;
+}
+
+.post-title p {
+  margin-bottom: 1em;
+}
+
+.post-description {
+  font-size: 1.3rem;
+  margin-bottom: 1em;
+  color: #383838;
 }/*# sourceMappingURL=style.css.map */

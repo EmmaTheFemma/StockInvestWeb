@@ -10,11 +10,15 @@
 
     .container {
         @include container(medium);
-        padding: 5em $padding-sides;
+        padding: 3em $padding-sides;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @include screen(tablet) {
+            padding: 5em $padding-sides;
+        }
     }
 }
 
@@ -29,6 +33,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%);
+    z-index: 1;
 
     img {
         max-height: 25em;

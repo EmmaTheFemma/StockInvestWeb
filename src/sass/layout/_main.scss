@@ -8,3 +8,15 @@ main {
     margin-top: 3em;
     margin-bottom: 3em;
 }
+
+article {
+    img {
+        max-height: 25em;
+    }
+
+    p {
+        :first-child {
+            margin-bottom: 5em;
+        }
+    }
+}

@@ -2,10 +2,19 @@
 layout: 'base.njk'
 ---
 
-<article>
+<article class="posts">
     <div class="container">
 
-        <h1>{{ title }}</h1>
+        <img src="{{ image }}" alt="{{ imageAlt }}">
+
+        <div class="post-title">
+            <h1>{{ title }}</h1>
+            <p>Last updated on <span>{{ date | postDate }}</span></p>
+        </div>
+
+        <p class="post-description">
+            {{ description }}
+        </p>
 
         {{ content | safe }}    
          
