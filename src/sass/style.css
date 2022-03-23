@@ -48,31 +48,48 @@ img {
   color: white;
 }
 
+.mt {
+  margin-top: 10em;
+}
+
+/* Gradient color1 - color2 - color1 */
+hr.style-one {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #5c5c5c;
-  max-width: 60ch;
+  max-width: 70ch;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.6rem;
+}
+@media (min-width: 900px) {
+  h1 {
+    font-size: 4.8rem;
+  }
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 3.6rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .title a {
@@ -86,13 +103,14 @@ h4 {
   display: flex;
   justify-content: center;
   color: white;
+  max-width: 100%;
 }
 
 .btn {
   background-color: green;
   width: 100%;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 500;
   padding: 0.7em 1.5em;
   border-radius: 8px;
@@ -104,7 +122,7 @@ h4 {
 @media (min-width: 1100px) {
   .btn {
     padding: 0.7em;
-    font-size: 1.2rem;
+    font-size: 1.44rem;
   }
 }
 
@@ -114,9 +132,9 @@ h4 {
 }
 .hero .container, .hero-img .container, .hero-special .container {
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 0 1.5em;
   max-width: 1000px;
-  padding: 3em 1em;
+  padding: 5em 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,7 +142,7 @@ h4 {
 }
 @media (min-width: 900px) {
   .hero .container, .hero-img .container, .hero-special .container {
-    padding: 5em 1em;
+    padding: 8em 1.5em;
   }
 }
 
@@ -209,19 +227,33 @@ h4 {
   overflow: hidden;
 }
 .snippet-featured article {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
   margin-top: 2em;
 }
-.snippet-featured .content {
-  padding: 1em 2em 3em 2em;
+@media (min-width: 600px) {
+  .snippet-featured article {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+}
+@media (min-width: 900px) {
+  .snippet-featured article {
+    margin-top: 0;
+  }
 }
 @media (min-width: 600px) {
+  .snippet-featured .content {
+    padding: 1em 2em 3em 2em;
+  }
+}
+@media (min-width: 900px) {
   .snippet-featured .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
     grid-gap: 2em;
+  }
+  .snippet-featured .container article {
+    height: 100%;
   }
 }
 
@@ -232,43 +264,58 @@ footer {
 }
 footer .container {
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 0 1.5em;
   max-width: 1000px;
 }
 
 header {
-  margin-top: 1em;
+  background-color: white;
+  padding: 0.8em 0;
 }
 header nav a {
   color: #383838;
-}
-header li {
-  margin-right: 1em;
-}
-header li:last-child {
-  margin-right: 0;
-}
-@media (min-width: 900px) {
-  header li {
-    left: 0;
-  }
+  z-index: 4;
 }
 header ul {
   display: flex;
+  background-color: white;
+  z-index: 5;
   position: fixed;
   left: -100%;
-  top: 70px;
+  top: 25px;
   gap: 0;
   flex-direction: column;
   text-align: center;
+  gap: 2em;
   transition: 0.3s;
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 700;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+@media (min-width: 900px) {
+  header ul {
+    position: static;
+    left: 0;
+    top: auto;
+    gap: 1em;
+    flex-direction: row;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
 }
 header .nav-menu.active {
   left: 0;
 }
+@media (min-width: 900px) {
+  header .nav-menu {
+    left: 0;
+  }
+}
 header .container {
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 0 1.5em;
   max-width: 1000px;
   display: flex;
   justify-content: space-between;
@@ -302,12 +349,11 @@ header .container {
 }
 
 main {
-  margin-top: 3em;
-  margin-bottom: 3em;
+  margin-bottom: 10em;
 }
 main .container {
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 0 1.5em;
   max-width: 1000px;
 }
 
@@ -318,13 +364,16 @@ article p :first-child {
   margin-bottom: 5em;
 }
 
+.posts {
+  margin-top: 5em;
+}
 .posts h1 {
   margin-top: 0.5em;
   margin-bottom: 0.2em;
 }
 .posts .container {
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 0 1.5em;
   max-width: 800px;
 }
 .posts img:first-child {
@@ -336,7 +385,7 @@ article p :first-child {
 }
 
 .post-description {
-  font-size: 1.3rem;
+  font-size: 1.56rem;
   margin-bottom: 1em;
   color: #383838;
 }/*# sourceMappingURL=style.css.map */

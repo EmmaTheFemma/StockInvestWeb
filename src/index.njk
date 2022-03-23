@@ -10,30 +10,14 @@ layout: 'base.njk'
     </div>
 </div>
 
-    <ul role="list" class="snippet-featured">
-        <div class="container">
-            {%- for post in collections.featured | reverse -%}
-            <li>
-                <article>
-                    <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}">
-                    <div class="content">
-                        <h3>{{ post.data.title }}</h3>
-                        <p>Last updated on <span>{{ post.date | postDate }}</span></p>
-                        <p>{{ post.data.description }}</p>
-                        <a class="btn" href="{{ post.url }}">Read More...</a>
-                    </div>
-                </article>
-            </li>
-            {%- endfor -%}
-        </div>
-    </ul>
+    {% include 'components/explain-this.njk' %}
 
-    <div class="container">
-        <h2>Bargain hunting for Stocks</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam omnis cum quos quam ea cupiditate tempora odit, dignissimos ipsam officiis!
-        </p>
-    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    {% include 'components/featured.njk' %}
 
 <div class="container">
     <h1><a href="https://www.youtube.com/watch?v=4wD00RT6d-g" target="_blank">Video</a></h1>
@@ -43,4 +27,7 @@ layout: 'base.njk'
     <a href="https://itnext.io/structuring-your-sass-projects-c8d41fa55ed4" target="_blank">SCSS Structure</a>
 
     <p>Hello Whats up?</p>
+    <p>
+        Make charts!! <a href="https://css-tricks.com/making-charts-with-css/" target="_blank">Here</a>
+    </p>
 </div>

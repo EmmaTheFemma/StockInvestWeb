@@ -71,21 +71,35 @@
     }
 
     article {
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
         margin-top: 2em;
-    }
+
+        @include screen(phone) {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+        };
+
+        @include screen(tablet) {
+            margin-top: 0;
+        };
+    };
     
     .content {
-        padding: 1em 2em 3em 2em;
+        
+        @include screen(phone) {
+            padding: 1em 2em 3em 2em;
+        }
     }
 
-    @include screen(phone) {
+    @include screen(tablet) {
         .container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-auto-rows: auto;
             grid-gap: 2em;
+
+            article {
+                height: 100%;
+            }
         }
     }
 }

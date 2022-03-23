@@ -6,14 +6,14 @@
 
     .container {
         @include container(medium);
-        padding: 3em $padding-sides;
+        padding: 5em $padding-sides;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
         @include screen(tablet) {
-            padding: 5em $padding-sides;
+            padding: 8em $padding-sides;
         }
     }
 }

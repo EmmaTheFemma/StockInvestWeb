@@ -4,11 +4,15 @@ $color-light: white;
 $color-dark: #383838;
 $color-grey: #5c5c5c;
 $color-grey-100: #909090;
+$color-background: white;
 
 $font-family: 'Roboto', sans-serif;
-$font-size: 1rem;
+$font-size: 1.2rem;
 
-$padding-sides: 1em;
+$padding-sides: 1.5em;
+
+//Top and bottom at pages.
+$between-pages: 10em;
 
 $size-small: 800px;
 $size-medium: 1000px;

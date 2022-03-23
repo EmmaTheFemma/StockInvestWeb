@@ -1,40 +1,60 @@
 @use "../utilities" as *;
 
 header {
-    margin-top: 1em;
+    background-color: $color-background;
+
+    padding: 0.8em 0;
+
+
     nav {
 
         a {
             color: $color-dark;
-        }
-    }
-
-    li {
-        margin-right: 1em;
-
-        &:last-child {
-            margin-right: 0;
-        }
-
-        @include screen(tablet) {
-            left: 0;
+            z-index: 4;
         }
     }
 
     ul {
         display: flex;
+        background-color: $color-background;
+        z-index: 5;
 
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 25px;
         gap: 0;
         flex-direction: column;
         text-align: center;
+        gap: 2em;
         transition: 0.3s;
+        width: 100%;
+        font-size: $font-size * 1.5;
+        font-weight: 700;
+
+        justify-content: space-between;
+        padding: 0 24px;
+
+
+        @include screen(tablet) {
+            position: static;
+            left: 0;
+            top: auto;
+            gap: 1em;
+
+            flex-direction: row;
+
+            font-size: $font-size;
+            font-weight: 400;
+        }
+        
     }
 
     .nav-menu {
         &.active {
+            left: 0;
+        }
+
+        @include screen(tablet) {
             left: 0;
         }
     }
