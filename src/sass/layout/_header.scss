@@ -3,7 +3,10 @@
 header {
     margin-top: 1em;
     nav {
-        display: flex;
+
+        a {
+            color: $color-dark;
+        }
     }
 
     li {
@@ -11,6 +14,28 @@ header {
 
         &:last-child {
             margin-right: 0;
+        }
+
+        @include screen(tablet) {
+            left: 0;
+        }
+    }
+
+    ul {
+        display: flex;
+
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-menu {
+        &.active {
+            left: 0;
         }
     }
 
@@ -20,5 +45,37 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+}
+
+.hamburger {
+    cursor: pointer;
+
+    span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: $color-dark;
+    }
+
+    &.active {
+        span {
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            &:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+    }
+
+    @include screen(tablet) {
+        display: none;
     }
 }

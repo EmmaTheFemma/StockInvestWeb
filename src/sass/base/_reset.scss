@@ -1,5 +1,8 @@
 @use "../utilities" as *;
 
+* {
+    box-sizing: border-box;
+}
 /* Remove default margin */
 body,
 h1,
@@ -38,7 +41,7 @@ img {
     object-fit: cover;
 }
 
-::selection, ::-moz-selection {
+::selection {
     background: $color-special-100;
     color: $color-light;
 }
