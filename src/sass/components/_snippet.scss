@@ -1,10 +1,10 @@
 @use "../utilities" as *;
 
-.snippet {
-
+.snippet-basic {
     h2,h3 {
         margin-top: 0.5em;
     }
+    
     li {
         margin-top: 3em;
 
@@ -12,6 +12,9 @@
             margin: 0;
         }
     }
+}
+.snippet {
+@extend .snippet-basic;
 
     img {
         grid-area: image;   
@@ -49,6 +52,7 @@
 };
 
 .snippet-featured {
+    @extend .snippet-basic;
 
     p {
         &:nth-child(2){

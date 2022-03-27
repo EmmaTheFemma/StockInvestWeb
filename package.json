@@ -36,5 +36,10 @@
     "onchange": "^7.1.0",
     "postcss-cli": "^9.1.0",
     "sass": "^1.49.8"
+  },
+  "dependencies": {
+    "chart.js": "^3.7.1",
+    "react-chartjs-2": "^4.0.1",
+    "react-hook-use-state": "^1.1.0"
   }
 }

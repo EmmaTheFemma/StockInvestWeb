@@ -6,6 +6,8 @@ module.exports = function(eleventyConfig) {
     //Add files to the public folder.
     eleventyConfig.addPassthroughCopy('./src/sass/style.css');
     eleventyConfig.addPassthroughCopy('./src/script.js');
+    eleventyConfig.addPassthroughCopy('./src/App.js');
+    eleventyConfig.addPassthroughCopy('./src/scripts');
 
     //All date related.
     //https://11ty.rocks/eleventyjs/dates/

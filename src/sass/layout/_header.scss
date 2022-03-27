@@ -3,12 +3,13 @@
 header {
     background-color: $color-background;
 
-    padding: 0.8em 0;
+    padding: 0.8em 0 2em 0;
 
 
     nav {
 
         a {
+            font-weight: 500;
             color: $color-dark;
             z-index: 4;
         }
@@ -20,12 +21,12 @@ header {
         z-index: 5;
 
         position: fixed;
-        left: -100%;
+        right: -100%;
         top: 25px;
         gap: 0;
         flex-direction: column;
         text-align: center;
-        gap: 2em;
+        gap: 1em;
         transition: 0.3s;
         width: 100%;
         font-size: $font-size * 1.5;
@@ -37,14 +38,19 @@ header {
 
         @include screen(tablet) {
             position: static;
-            left: 0;
+            right: 0;
             top: auto;
-            gap: 1em;
 
             flex-direction: row;
 
             font-size: $font-size;
             font-weight: 400;
+
+            a {
+                font-weight: 300;
+                font-size: $font-size *1.1;
+            }
+
         }
         
     }

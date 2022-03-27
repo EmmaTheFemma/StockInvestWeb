@@ -3,21 +3,29 @@
 body {
     font-family: $font-family;
     line-height: 1.5;
+    letter-spacing: .05px;
 }
 p {
     font-size: $font-size;
-    color: $color-grey;
-    max-width: 70ch;
+    color: $color-dark;
+    max-width: 40em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1;
 }
 
 h1 {
-    font-size: $font-size * 3;
+    font-size: $font-size * 3.5;
     @include screen(tablet) {
         font-size: $font-size * 4;
     }
 }
 h2 {
-    font-size: $font-size * 3;
+    font-size: $font-size * 2.8;
+    @include screen(tablet) {
+        font-size: $font-size * 3;
+    }
 }
 h3 {
     font-size: $font-size * 2;
