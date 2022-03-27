@@ -58,12 +58,17 @@ align-items: center;
     //text-decoration-thickness: 0.05em;
 }
 
-.text-red {
-    color: $color-red;
+.text-plus {
+    color: $color-green;
+
+    &::before {
+        content: "+";
+    }
+
 }
 
-.text-green {
-    color: $color-green;
+.text-minus {
+    color: $color-red;
 }
 
 .color-special {

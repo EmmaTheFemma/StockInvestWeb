@@ -176,7 +176,7 @@ description: A real estate company that invests mainly in shopping malls is sell
 
 <br>
 <p>
-    Citycon Oyj is selling for 40% under the valuation of the real estate (EPRA NAV).
+    Citycon Oyj is selling for <span class="text-plus">40%</span> under the valuation of the real estate (EPRA NAV).
 </p>
 
 <br>
@@ -187,7 +187,7 @@ description: A real estate company that invests mainly in shopping malls is sell
 
 <br>
 <p>
-    The dividend is over 7% with only 42% coming from NRI.
+    The dividend is over <span class="text-plus">7%</span> with only 42% coming from NRI.
     Making it possible for an increase in dividends in the future and leaving the company with a lot of money left for re-investments and repayments of loans.
 </p>
 
@@ -198,7 +198,7 @@ description: A real estate company that invests mainly in shopping malls is sell
 
 <br>
 <p>
-    If you buy this company, you will probably not see a huge increase in the share price. Unless they sell properties or increase their NRI. Would they sell all their properties at their EPRA NAV, the share price would probably go up around 60%.
+    If you buy this company, you will probably not see a huge increase in the share price. Unless they sell properties or increase their NRI. Would they sell all their properties at their EPRA NAV, the share price would probably go up around <span class="text-plus">60%</span>.
 </p>
 
 <br>
