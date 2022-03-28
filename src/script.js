@@ -12,3 +12,15 @@ document.querySelectorAll("nav-link").forEach(n => n.addEventListener("click", (
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }));
+
+
+//Trying to store current stock price.
+let citycon = 6.94;
+let cityconDividend = 0.5;
+let cityconDividendYield = (cityconDividend / citycon) * 100 ;
+let cityconAmountOfShares = 168008940;
+let cityconEpraNav2020 = 2011800000;
+
+let cityconNavDiscount = 1 - (citycon / ( cityconEpraNav2020 / cityconAmountOfShares ));
+
+document.getElementById("citycon").innerHTML = citycon;

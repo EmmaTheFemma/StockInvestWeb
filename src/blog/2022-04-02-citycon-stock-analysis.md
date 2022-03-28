@@ -26,6 +26,12 @@ description: A real estate company that invests mainly in shopping malls is sell
 <p>
     COVID-19 and quarantines have also impacted the faith in these kinds of properties. I would never personally go to a shopping mall in the middle of a pandemic.
 </p>
+
+<br>
+<p>
+    And all of these can be right, as you will see from the numbers in this analysis. But if we look at a longer period of time, it seems it has been doing pretty okey.
+</p>
+
 <br>
 <p>
     What first sparked my interest was the fact that the stock is trading for far less than the value of their properties. Here is some data from their annual reports.
@@ -45,14 +51,14 @@ description: A real estate company that invests mainly in shopping malls is sell
 
 <br>
 <p>
-    If you buy the stock at the price of 6,89 €EUR and divide it, by the 2021 NAV EPRA you get something like 0.6 so about 0.4 or 40% less than what the properties are valued at.
+    If you buy the stock at the price of €6,95 EUR and divide it, by the 2021 EPRA NAV you get something like 0.58 so about 0.42 or 42% less than what the properties are valued at.
 </p>
 
 <br>
 <p>
     I don’t quite know how to value real estate, so I’ve just assumed that
     <a href="https://www.epra.com/" target="_blank">EPRA</a>
-    probably are not 40% incorrect in their valuation of the properties. 
+    probably are not 42% incorrect in their valuation of the properties. 
 </p>
 
 <br>
@@ -65,7 +71,7 @@ description: A real estate company that invests mainly in shopping malls is sell
 
 <br>
 <p>
-    I believe it's harder to say how much, let's say, an education will be worth, and easier to say how much a car is worth (and you can cash in on it soon).
+    I believe it's harder to say how much, let's say, an education will be worth, and easier to say how much a car is worth (and you can cash in on it sooner).
 </p>
 
 <div class="text-centered">
@@ -91,7 +97,7 @@ description: A real estate company that invests mainly in shopping malls is sell
 
 <br>
 <p>
-    Instead of using earnings (because they take into account the property valuation) we use NRI then we get a NRI/price of 6. 
+    Instead of using earnings (because they take into account the property valuation) we use NRI then we get a NRI/price of 5.8 
 </p>
 
 <br>
@@ -101,7 +107,7 @@ description: A real estate company that invests mainly in shopping malls is sell
 
 <br>
 <p>
-    So about a 24% increase in 10 years or 2.25% YoY increase.
+    So about a <span class="text-plus">24%</span> increase in 10 years or <span class="text-plus">2.25%</span> YoY increase.
 </p>
 
 <br>
@@ -111,7 +117,7 @@ description: A real estate company that invests mainly in shopping malls is sell
 
 <br>
 <p>
-    So we have a “P/E” of 6 while also owning assets that we bought 40% less than what they are valued at.
+    So we have a “P/E” of 5.8 while also owning assets that we bought <span class="text-plus">40%</span> less than what they are valued at.
     But at a very slow/nonexistent growth.
 </p>
 
@@ -122,7 +128,7 @@ description: A real estate company that invests mainly in shopping malls is sell
 
 <br>
 <p>
-    I don’t believe growth is really necessary IF you buy it cheaply enough.
+    I don’t believe growth is really necessary IF you buy it cheaply enough and the company is pretty stable.
 </p>
 
 <div class="text-centered">
@@ -139,24 +145,31 @@ description: A real estate company that invests mainly in shopping malls is sell
 
 <br>
 <p>
-    Do we take <b>DIVIDEND / NRI</b> we get the % of the rent that we get in the form of dividends. 
+    If we take <b>DIVIDEND / NRI</b> we get the % of the rent that we get in the form of dividends. 
 </p>
 
 <br>
 <p>
-    Only 40% of the NRI being distributed makes it very sustainable and with a possibility of a shit ton of increased dividends in the future.
+    Only 42% of the NRI being distributed makes it very sustainable and with a possibility of a shit ton of increased dividends in the future.
 </p>
 
 <br>
 <p>
-    I don’t  really know what they do with the rest of the 60%, but I'm guessing very long-term investments and maybe some repayment of loans.
+    I don’t  really know what they do with the rest of the 58%, but I'm guessing very long-term investments and maybe some repayment of loans.
 </p>
 
-<br>
-<br>
-<br>
-<h3>Loans</h3>
+<div class="text-centered">
+    <h2 class="mr-top">Equity Ratio</h2>
+    <p>Year on Year growth</p>
+</div>
 
+<img src="https://i.imgur.com/I94stnN.png" alt="Citycon Oyj Equity Ratio 2012-2021 YoY" class="zoom">
+
+<br>
+<p>
+    As we see clearly, their own capital vs loans has been increasing over the past 10 years.
+    By over <span class="text-plus">61%</span> since 2012 and that's a <span class="text-plus">4.91%</span> YoY growth.
+</p>
 <br>
 <p>
     The loans are not so big, not the best I’ve seen at a real estate company, but not nearly the worst.
@@ -164,14 +177,14 @@ description: A real estate company that invests mainly in shopping malls is sell
 
 <br>
 <p>
-    With only having about 50% loans and with that huge NRI they must be able to survive higher interest rates.
+    With 52% of the company, that means that only 48% are loans and with that huge NRI, they must be able to survive higher interest rates.
 </p>
 
 <h2 class="color-special text-underline mr-top">Conclusion</h2>
 
 <br>
 <p>
-    Using today's share price of 6,89 €EUR.
+    The <span>{{ date | postDate }}</span> share price of €<span id="citycon"></span> EUR.
 </p>
 
 <br>
@@ -182,7 +195,7 @@ description: A real estate company that invests mainly in shopping malls is sell
 <br>
 <p>
     Their Net Rental Income (NRI) is about 17% of the stock's price.
-     With only an average YoY growth of 2.25% for the past 10 years.
+     With only an average YoY growth of <span class="text-plus">2.25%</span> for the past 10 years.
 </p>
 
 <br>
@@ -193,7 +206,7 @@ description: A real estate company that invests mainly in shopping malls is sell
 
 <br>
 <p>
-    Only 50% is loans. Making it have high survivability if interest rates rise because of this and their high NRI.
+    Only 48% is loans. Making it have high survivability if interest rates rise because of this and their high NRI.
 </p>
 
 <br>
