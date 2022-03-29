@@ -8,6 +8,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('./src/script.js');
     eleventyConfig.addPassthroughCopy('./src/App.js');
     eleventyConfig.addPassthroughCopy('./src/scripts');
+    eleventyConfig.addPassthroughCopy('./src/assets/');
 
     //All date related.
     //https://11ty.rocks/eleventyjs/dates/

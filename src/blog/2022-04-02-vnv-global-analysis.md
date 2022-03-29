@@ -138,3 +138,30 @@ description: Is an investment company that’s investing in mostly unlisted comp
 <p>
     This is a very important part of investment companies to look at the underlying stocks but with the information being so hard to find and with companies I don’t understand I really can’t do much at this stage.
 </p>
+
+<h2 class="mr-top">Conclusion</h2>
+
+<br>
+<p>
+    Well diversified company that has only 2.1% russian companies but a total of 24.8% could and do have some connections with Russia.
+</p>
+
+<br>
+<p>
+    Unclear how much but would assume there’s very little with Russia, if we look at all their investments as a whole.
+</p>
+
+<br>
+<p>
+    Many companies are unlisted so it is very hard to evaluate them, at least for me.
+</p>
+
+<br>
+<p>
+    The company is selling with a 50% NAV Discount. One of the biggest ones I’ve seen in an investment company.
+</p>
+
+<br>
+<p>
+    I do find this 50% NAV being very tempting and based on how these are valued and by whom this could be an extremely good investment.
+</p>
